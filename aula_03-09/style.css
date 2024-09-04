@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.principal {
+    margin: auto;
+    width: 50%;
+    background-color: beige;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.377);
+    text-align: center;
+}
+
+.texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: yellowgreen;
+
+}
+
+
+.titulo {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}

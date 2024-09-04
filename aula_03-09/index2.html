@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Aula 04</title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript">
+
+	  while (true) {
+	  
+		let = numero1 = prompt('Informe o primeiro valor: ');
+		let = numero2 = prompt('Informe o segundo valor: ');
+		let = operacao = prompt('Informe a operação (use "+" para adição, "-" para subtração, "x" para multiplicação e "/" para divisão: ');
+		//is not a number
+		if (!isNaN(numero1) && !isNaN(numero2) && numero1 != '' && numero2 != '') {
+			numero1 = parseFloat(numero1);
+			numero2 = parseFloat(numero2);
+			if (operacao == '+') {
+			alert('Resultado: '+ (numero1 + numero2));
+		}
+			else if (operacao == '-') {
+			alert('Resultado: '+ (numero1 - numero2));
+			} else if (operacao == 'x') {
+			alert('Resultado: '+ (numero1 * numero2));
+			} else if (operacao == '/') {
+			alert('Resultado: '+ (numero1 / numero2));
+			} else {
+			alert('Informe a operação!');
+			}
+			}
+		else {
+			alert('Informe apenas números!');
+		}
+		let pergunta = prompt('Deseja repetir? Pressione "s" para sim');
+		if (pergunta !== 's'){
+			break
+		}
+		
+		
+	  } 
+	  
+	</script>
+  </head>
+  <body>
+  
+  </body>
+</html>
