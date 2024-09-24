@@ -1,0 +1,21 @@
+.cabecalho{
+ background-image: linear-gradient(to bottom, #6200ff, rgba(217, 206, 253, 0.562));
+ box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.623)
+}
+
+.Titulo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px white;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: rgba(141, 105, 172, 0.699);
+}
