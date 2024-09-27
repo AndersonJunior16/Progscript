@@ -5,7 +5,7 @@
 }
 
 main {
-    margin-bottom: 200px; /* Espaçamento entre o conteúdo da main e o rodapé */
+    margin-bottom: 200px; 
 }
 
 .cabecalho{
@@ -48,8 +48,8 @@ body::before {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    width: 110%; /* Aumenta a largura da sobreposição */
-    height: 130%; /* Aumenta a altura da sobreposição */
+    width: 110%; 
+    height: 124%; 
 }
 
 .teste {
@@ -141,7 +141,6 @@ body::before {
 }
 
 
-
 .musicas_div {
     display: flex;
     flex-direction: column;
@@ -168,6 +167,9 @@ body::before {
 
 .titulo_poesia{
     text-align: left;
+    color: #0d2907;
+    font-weight: bold;
+    text-shadow: 0.5px 1px 1px black;
 }
 
 .musicas{
@@ -221,7 +223,9 @@ padding: 0px;
 }
 
 .historia_box {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 10px;
+    max-height: 300px;
 }
 
 
@@ -244,7 +248,7 @@ padding: 0px;
     text-align: center;
     font-weight: bold;
     color: antiquewhite;
-    background-color: #004F2D;
+    background-color: rgba(0, 0, 0, 0.685);
 }
 
 input{
@@ -256,5 +260,3 @@ input::placeholder{
 color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
