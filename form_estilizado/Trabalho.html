@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula 7</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="Trabalho.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Lista de Contatos</h1>
+        </header>
+        <main>
+            <div class="formDiv">
+                <form class="AdcContratos" id="frmContatos">
+                    <input type="text" placeholder="Nome" id="nome" />
+                    <br /><br />
+                    <input type="text" placeholder="Telefone" id="telefone" />
+                    <br /><br />
+                    <input type="text" placeholder="Celular" id="celular" />
+                    <br /><br />
+                    <button>Adicionar</button>
+
+
+                    <ul id="lista-contatos">
+                    </ul>
+                </form>
+            </div>
+        </main>
+
+
+        <script type="text/javascript">
+            class Contato {
+                constructor(nome, telefone, celular) {
+                    this.nome = nome;
+                    this.telefone = telefone;
+                    this.celular = celular;
+                }
+            }
+        
+            function listarContatos() {
+                let lista = document.getElementById('lista-contatos');
+                let auxHtml = '';
+        
+                for (let i = 0; i < listaContatos.length; i++) {
+                    auxHtml += '<li>' + listaContatos[i].nome + ' - ' + listaContatos[i].telefone + ' - ' + listaContatos[i].celular + '</li>';
+                }
+        
+                lista.innerHTML = auxHtml; 
+            }
+        
+            let listaContatos = [];
+        
+            window.onload = function () {
+                document.getElementById('frmContatos').onsubmit = function (evento) {
+                    evento.preventDefault();
+        
+                    let nome = document.getElementById('nome').value;
+                    let telefone = document.getElementById('telefone').value;
+                    let celular = document.getElementById('celular').value;
+        
+                    let novoContato = new Contato(nome, telefone, celular);
+                    listaContatos.push(novoContato);
+        
+                    document.getElementById('nome').value = '';
+                    document.getElementById('telefone').value = '';
+                    document.getElementById('celular').value = '';
+        
+                    listarContatos();
+                }
+        
+                listarContatos();
+            }
+        
+            console.log(listaContatos);
+        </script>
+        
+        </script>
+    </body>
+
+</html>
