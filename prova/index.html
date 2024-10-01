@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 1º bimestre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Perguntas</h1>
+    </header>
+    <main>
+        <div class="formDiv">
+            <form >
+                <select name="perguntas" id="perguntas">
+                    <option value="1">Quais são as principais características da linguagem JavaScript</option>
+                    <option value="2">Quais são as principais características da linguagem CSS</option>
+                    <option value="3">Quais são as principais características de funções na Linguagem JavaScript</option>
+                    <option value="4">Quais são as principais características de eventos na Linguagem JavaScript</option>
+                </select>
+                <button type="button" onclick="mostrar_resposta()">Ver resposta</button>
+                <button type="button" onclick="limpar_resposta()">Limpar resposta</button>
+            </form>
+        <div>
+        <div>
+            <table id="respostas_tabela">
+                <tr>
+                    <th>Pergunta</th>
+                    <th>Resposta</th>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
